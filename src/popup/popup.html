@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ahrefs Switcher</title>
+		<link rel="stylesheet" href="popup.css">
+		<script type="module" src="popup.js"></script>
+	</head>
+	<body>
+		<header><img class="mark" src="../../assets/ahrefs-icon.png" alt="" width="38" height="38"><div><h1>Ahrefs Switcher</h1><p>YOUR ACCOUNTS, ONE CLICK AWAY</p></div><button id="add" type="button" aria-label="Add Current Account" title="Add Current Account">+</button></header>
+		<main>
+			<div id="message" role="status" aria-live="polite"></div>
+			<button id="recover" class="danger" hidden>Recover Interrupted Switch</button>
+			<section aria-label="Saved accounts"><div id="accounts"></div></section>
+		</main>
+		<dialog id="editor"><form id="account-form">
+			<label for="name">Account name</label><input id="name" maxlength="80" required placeholder="Personal or Company">
+			<div class="toolbar"><button type="button" id="cancel">Cancel</button><button class="primary" type="submit">Save Account</button></div>
+		</form></dialog>
+	</body>
+</html>

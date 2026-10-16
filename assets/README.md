@@ -1,0 +1,1 @@
+The manifest and popup use ahrefs-icon.png for the toolbar, extension listing and popup logo. Supplied by the project owner from https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ahrefs-icon.png. Ahrefs branding belongs to its respective owner; this extension is not an official Ahrefs product.

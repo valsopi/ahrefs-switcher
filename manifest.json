@@ -1,0 +1,14 @@
+{
+	"manifest_version": 3,
+	"name": "Ahrefs Switcher",
+	"version": "1.1.5",
+	"minimum_chrome_version": "132",
+	"description": "Save your own Ahrefs sessions locally and switch between them without a passphrase.",
+	"permissions": ["cookies", "storage", "scripting"],
+	"host_permissions": ["https://*.ahrefs.com/*"],
+	"background": {"service_worker": "src/background/service-worker.js", "type": "module"},
+	"icons": {"16": "assets/ahrefs-icon.png", "32": "assets/ahrefs-icon.png", "48": "assets/ahrefs-icon.png", "128": "assets/ahrefs-icon.png"},
+	"action": {"default_popup": "src/popup/popup.html", "default_title": "Ahrefs Switcher", "default_icon": {"16": "assets/ahrefs-icon.png", "32": "assets/ahrefs-icon.png"}},
+	"incognito": "not_allowed",
+	"content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'"}
+}
